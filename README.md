@@ -79,6 +79,10 @@ Since model file is large, download it from Drive:
 👉 Model Download:  
 https://drive.google.com/file/d/1_WwekA4ASankDRithqeeUgahKxr5r1TF/view?usp=sharing  
 
+
+
+
+
 Then run:
 
 ```python
@@ -95,3 +99,5 @@ def predict(img):
     img = img.reshape(1, 48, 48, 1)/255.0
     pred = model.predict(img)[0]
     print("Emotion:", emotion_labels[np.argmax(pred)])
+
+ 
